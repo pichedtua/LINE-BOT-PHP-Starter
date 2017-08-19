@@ -14,10 +14,13 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
-			if($text == 'ทดสอบ')
+			if($text == 'รหัส')
 			{
 				$text = '12345611';
-			}			
+			}
+			else{
+				$text = '';
+			}
 			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
